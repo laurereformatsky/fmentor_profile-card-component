@@ -1,0 +1,218 @@
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-position: top -47vh right 51vw, bottom -52vh left 49vw;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
+header.header,
+h1 {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+footer {
+  padding: 1em;
+}
+
+p.attribution {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+a {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-text-decoration: none;
+  -moz-text-decoration: none;
+  transition: color 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+}
+
+a:hover {
+  color: hsl(180, 100%, 50%);
+  transition: color 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+}
+
+/* CARD COMPONENT */
+article.card {
+  width: 19.44444444444444em; /* 350px / 18px */
+  height: 20.83333333333333em; /* 375px / 18px */
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-radius: 1em;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  box-shadow: hsla(229, 23%, 23%, 0.4) 0 25px 50px -12px;
+  -webkit-box-shadow: hsla(229, 23%, 23%, 0.4) 0 25px 50px -12px;
+  -moz-box-shadow: hsla(229, 23%, 23%, 0.4) 0 25px 50px -12px;
+  text-align: center;
+}
+
+/* HEADER CARD COMPONENT */
+header.card-header {
+  width: 100%;
+  height: 10.58333333333333em; /* [140px + (101px/2)] / 18px */
+  position: relative;
+}
+
+div.card-header-bg-profile {
+  width: 100%;
+  height: 7.777777777777778em; /* 140px / 18px */
+  background-image: url(../images/bg-pattern-card.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 1em;
+  -webkit-border-top-left-radius: 1em;
+  -moz-border-radius-topleft: 1em;
+  border-top-right-radius: 1em;
+  -webkit-border-top-right-radius: 1em;
+  -moz-border-radius-topright: 1em;
+}
+
+div.card-header-user-profile {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+div.card-header-user-profile > img {
+  width: 5.333333333333333em; /* 96px / 18px */
+  height: auto;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 0.3em solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+/* BODY CARD COMPONENT */
+div.card-body {
+  width: 100%;
+}
+
+/* SECTION CARD COMPONENT */
+div.card-section {
+  width: 100%;
+  padding-top: 1.6111111111em; /* 29px / 18px */
+  padding-right: 2.6666666667em; /* 48px / 18px */
+  padding-bottom: 1.5em; /* 27px / 18px */
+  padding-left: 2.6666666667em; /* 48px / 18px */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-top: 0.1em solid hsl(0, 0%, 91%);
+}
+
+/* FONT STYLES CARD COMPONENT */
+h2.card-body-title,
+p.card-section-numbers {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+
+span.card-body-title-age,
+p.card-body-subtitle,
+h3.card-section-title {
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+
+h2.card-body-title {
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+span.card-body-title-age {
+  margin-left: 0.6111111111111111em; /* 11px / 18px */
+}
+
+p.card-body-subtitle {
+  font-size: 0.9rem;
+}
+
+p.card-section-numbers {
+  font-size: 1.1rem;
+}
+
+h3.card-section-title {
+  margin-top: 0.3rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (min-width: 20.83333333333333em) and (orientation: portrait) { /* 375px / 18px */
+  /* GENERAL STYLES */
+  p.attribution {
+    font-size: 0.9rem;
+  }
+
+  a {
+    transition: color 0.3s ease-in;
+    -webkit-transition: color 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in;
+    -o-transition: color 0.3s ease-in;
+  }
+
+  a:hover {
+    color: hsl(229, 23%, 23%);
+  }
+
+  a:active {
+    color: hsl(180, 100%, 50%);
+    transition: color 0.3s ease-in;
+    -webkit-transition: color 0.3s ease-in;
+    -moz-transition: color 0.3s ease-in;
+    -o-transition: color 0.3s ease-in;
+  }
+
+  /* CARD COMPONENT */
+  article.card {
+    width: 18.11111111111111em; /* 326px / 18px */
+  }
+
+  /* SECTION CARD COMPONENT */
+  div.card-section {
+    padding-right: 2.333333333333333em; /* 42px / 18px */
+    padding-left: 2.333333333333333em; /* 42px / 18px */
+  }
+}

@@ -160,10 +160,7 @@ div.card-body {
 /* SECTION CARD COMPONENT */
 div.card-section {
   width: 100%;
-  padding-top: 1.611rem; /* 29px / 18px */
-  padding-right: 2.667rem; /* 48px / 18px */
-  padding-bottom: 1.5rem; /* 27px / 18px */
-  padding-left: 2.667rem; /* 48px / 18px */
+  padding: 1.611rem 2.667rem 1.5rem 2.667rem; /* 29px 48px 27px 48px / 18px */
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -217,7 +214,7 @@ h3.card-section-title {
 }
 
 /* RESPONSIVE DESIGN */
-@media only screen and (min-width: 20.83333333333333em) and (orientation: portrait) { /* 375px / 18px */
+@media only screen and (max-width: 375px) and (orientation: portrait) {
   /* GENERAL STYLES */
   p.attribution {
     font-size: 0.8rem;
@@ -249,7 +246,6 @@ h3.card-section-title {
 
   /* SECTION CARD COMPONENT */
   div.card-section {
-    padding-right: 2.333rem; /* 42px / 18px */
-    padding-left: 2.333rem; /* 42px / 18px */
+    padding: auto 2.333rem; /* 42px / 18px */
   }
 }

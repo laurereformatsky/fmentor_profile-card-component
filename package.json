@@ -1,0 +1,18 @@
+{
+  "name": "profile-card-component",
+  "version": "1.0.0",
+  "description": "Project made by Frontend Mentor",
+  "main": "index.html",
+  "scripts": {
+    "htmlhint": "htmlhint ./index.html",
+    "stylelint": "stylelint ./css/styles.css"
+  },
+  "author": "Laure Réformatsky",
+  "license": "ISC",
+  "devDependencies": {
+    "doiuse": "^4.4.1",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard": "^25.0.0"
+  }
+}
